@@ -31,28 +31,20 @@
 }
 
 .nav {
-  height: 100%;
+  align-self: stretch;
 }
 
 .nav-list {
   display: flex;
   gap: 2.8rem;
-  height: inherit;
-  align-items: end;
+  height: 100%;
+  align-items: center;
 }
 
 .nav-item {
+  position: relative;
   display: flex;
-  align-items: center;
-  height: inherit;
-}
-
-.nav-item:not(.nav-item-active) {
-  height: calc(100% - 3px);
-}
-
-.nav-item-active {
-  border-top: 3px solid #c8c8c8;
+  align-self: stretch;
 }
 
 .nav-link {
@@ -60,6 +52,17 @@
   padding-left: 1rem;
   padding-right: 1rem;
   letter-spacing: -0.5px;
+  align-self: center;
+}
+
+.nav-link.nav-link-active .nav-link-text::before,
+.nav-link:not(.nav-link-active) .nav-link-text:hover::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #c8c8c8;
 }
 
 .social-list {
