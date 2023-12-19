@@ -19,7 +19,8 @@
 .header-content {
   display: flex;
   height: 12rem;
-  padding: 0 18rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
 }
 
 .logo {
