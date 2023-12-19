@@ -16,33 +16,28 @@
   margin: 0 auto;
 }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: 20.9% 59.9% 19.2%;
-  height: 16.1rem;
+.header-content {
+  display: flex;
+  height: 12rem;
+  padding: 0 18rem;
 }
 
 .logo {
   font-size: 3.6rem;
   text-transform: uppercase;
-  justify-self: right;
-  padding-top: 3.9rem;
-}
-
-.nav {
-  justify-self: right;
-  width: 724px;
+  padding: 3.9rem 22.8rem 0 0;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  gap: 2.8rem;
 }
 
 .nav-item {
-  display: inline-block;
+  display: flex;
   font-size: 2rem;
   padding: 4.7rem 1rem 0;
+  letter-spacing: -0.5px;
 }
 
 .nav-item::first-letter {
@@ -58,8 +53,7 @@
 }
 
 .social {
-  justify-self: left;
-  padding: 5rem 0 0 1rem;
+  padding: 5rem 0 0 0.7rem;
 }
 
 .social-list {
