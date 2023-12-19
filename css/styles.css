@@ -19,42 +19,47 @@
 .header {
   display: flex;
   height: 12rem;
+  gap: 1rem;
   padding-left: 18rem;
-  padding-right: 18rem;
+  align-items: center;
 }
 
 .logo {
   font-size: 3.6rem;
   text-transform: uppercase;
-  padding: 3.9rem 22.8rem 0 0;
+  width: 37.4rem;
+}
+
+.nav {
+  height: 100%;
 }
 
 .nav-list {
   display: flex;
   gap: 2.8rem;
+  height: inherit;
+  align-items: end;
 }
 
 .nav-item {
   display: flex;
-  font-size: 2rem;
-  padding: 4.7rem 1rem 0;
-  letter-spacing: -0.5px;
-}
-
-.nav-item::first-letter {
-  text-transform: uppercase;
+  align-items: center;
+  height: inherit;
 }
 
 .nav-item:not(.nav-item-active) {
-  padding-top: 5rem;
+  height: calc(100% - 3px);
 }
 
 .nav-item-active {
   border-top: 3px solid #c8c8c8;
 }
 
-.social {
-  padding: 5rem 0 0 0.7rem;
+.nav-link {
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: -0.5px;
 }
 
 .social-list {
