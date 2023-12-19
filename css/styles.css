@@ -67,11 +67,29 @@
 
 .social-list {
   display: flex;
-  gap: 1.3rem;
 }
 
-.social-item {
+.social-link {
+  display: flex;
+  height: 3.2rem;
+  width: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.social-icon {
   fill: #dab33e;
   height: 2.1rem;
   width: 2.1rem;
+  transition: all 0.3s linear;
+}
+
+.social-link:hover {
+  border: 1px solid black;
+}
+
+.social-link:hover .social-icon {
+  fill: rgba(0, 0, 0, 0.2);
 }
