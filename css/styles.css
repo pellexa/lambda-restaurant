@@ -21,13 +21,14 @@
   height: 12rem;
   gap: 1rem;
   padding-left: 18rem;
+  padding-right: 18rem;
   align-items: center;
 }
 
 .logo {
   font-size: 3.6rem;
   text-transform: uppercase;
-  width: 37.4rem;
+  margin-right: auto;
 }
 
 .nav {
@@ -75,7 +76,6 @@
   width: 3.2rem;
   justify-content: center;
   align-items: center;
-  transform: translateX(-50%);
   border-radius: 3px;
 }
 
