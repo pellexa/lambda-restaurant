@@ -16,10 +16,6 @@
   margin: 0 auto;
 }
 
-.header {
-  font-size: 2rem;
-}
-
 .header-grid {
   display: grid;
   grid-template-columns: 20.9% 59.9% 19.2%;
@@ -45,6 +41,7 @@
 
 .nav-item {
   display: inline-block;
+  font-size: 2rem;
   padding: 4.7rem 1rem 0;
 }
 
