@@ -5,13 +5,21 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+
+Colors:
+ - Text:
+    #e8e8e8
+    #ffffff
+
 */
 
 :root {
   font: 400 10px / 1.2 "Yeseva One";
+  color: #e8e8e8;
 }
 
 .container {
+  position: relative;
   width: 160rem;
   margin: 0 auto;
 }
@@ -23,6 +31,16 @@
   padding-left: 18rem;
   padding-right: 20.4rem;
   align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.01)
+  );
+
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -101,4 +119,54 @@
 
 .social-link:active {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ***************** */
+/* Promo */
+/* ***************** */
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 75rem;
+  background-image: url("../img/promo.png");
+}
+
+.promo-text {
+  font-family: "Yeseva One";
+  font-size: 9rem;
+  line-height: 1.3;
+  padding: 0 32rem;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.promo-divider {
+  background-image: url("../img/divider.png");
+  background-size: cover;
+  height: 4.4rem;
+  width: 23.4rem;
+}
+
+.promo-buttons {
+  font-family: "Lato";
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1.6rem 5rem;
+}
+
+.btn-black {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-white {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
 }
