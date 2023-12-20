@@ -56,9 +56,7 @@
   padding-right: 1.4rem;
 }
 
-.nav-link:link::before,
-.nav-link:focus::before,
-.nav-link:visited::before {
+.nav-link::before {
   opacity: 0;
   content: "";
   width: 100%;
@@ -101,10 +99,4 @@
 .social-link:hover,
 .social-link:active {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.social-link:link,
-.social-link:focus,
-.social-link:visited {
-  background-color: transparent;
 }
