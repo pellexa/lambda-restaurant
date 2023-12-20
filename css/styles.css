@@ -19,9 +19,8 @@
 .header {
   display: flex;
   height: 12rem;
-  gap: 1rem;
   padding-left: 18rem;
-  padding-right: 18rem;
+  padding-right: 21.2rem;
   align-items: center;
 }
 
@@ -32,12 +31,14 @@
 }
 
 .nav {
+  font-family: "Gentium Book Plus";
+  font-weight: bold;
   align-self: stretch;
 }
 
 .nav-list {
   display: flex;
-  gap: 2.8rem;
+  gap: 2.2rem;
   height: 100%;
   align-items: center;
 }
@@ -49,10 +50,9 @@
 }
 
 .nav-link {
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  letter-spacing: -0.5px;
+  font-size: 2.1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
   align-self: center;
 }
 
