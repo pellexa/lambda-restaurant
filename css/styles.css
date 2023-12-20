@@ -84,7 +84,6 @@
   width: 3.2rem;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   border-radius: 3px;
   transition: background-color 0.3s ease-in;
   cursor: pointer;
@@ -96,7 +95,10 @@
   width: 2.1rem;
 }
 
-.social-link:hover,
-.social-link:active {
+.social-link:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.social-link:active {
+  background-color: rgba(0, 0, 0, 0.15);
 }
