@@ -56,14 +56,21 @@
   padding-right: 1.4rem;
 }
 
-.nav-link.nav-link-active .nav-link-text::before,
-.nav-link:not(.nav-link-active) .nav-link-text:hover::before {
+.nav-link::before {
+  opacity: 0;
   content: "";
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 4px solid #c8c8c8;
+  height: 3px;
+  background: #fff;
+  transition: opacity 0.3s ease-in;
+}
+
+.nav-link.nav-link-active::before,
+.nav-link:hover::before {
+  opacity: 0.8;
 }
 
 .social-list {
