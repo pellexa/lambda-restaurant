@@ -230,16 +230,14 @@ Colors:
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex: 1;
+  padding-bottom: 2rem;
 }
 
 .title {
   font-family: "Yeseva One";
   font-size: 3.6rem;
   color: #cc9900;
-}
-
-.about-title {
-  margin-top: -2rem;
 }
 
 .about-text {
@@ -256,6 +254,6 @@ Colors:
   transform: translateX(3.6rem);
 }
 
-.about-img {
-  transform: translateY(1rem);
+.about-img-container {
+  padding-top: 3rem;
 }
