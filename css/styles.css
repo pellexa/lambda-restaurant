@@ -144,7 +144,7 @@ Colors:
   padding-left: 32rem;
   padding-right: 32rem;
   text-align: center;
-  text-shadow: 1px 1px 2px rgb(0 0 0 /80%);
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 80%);
 }
 
 .promo-divider {
@@ -208,27 +208,29 @@ Colors:
   padding-right: 24rem;
   background-image: linear-gradient(
       to right bottom,
-      rgb(255 255 255 /14%),
-      rgb(0 0 0 /10%)
+      rgb(255 255 255 / 14%),
+      rgb(0 0 0 / 10%)
     ),
     url("../img/bg-about.png");
-  box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 /6%);
+  box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 / 6%);
 }
 
 .about-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex: 1;
   padding-top: 0.6rem;
   padding-bottom: 2rem;
+}
+
+.about-heading-container {
+  margin-bottom: 1.4rem;
 }
 
 .about-heading {
   font-family: "Yeseva One";
   font-size: 3.6rem;
   color: #cc9900;
-  margin-bottom: 1.4rem;
 }
 
 .about-divider {
@@ -255,7 +257,8 @@ Colors:
 }
 
 .about-img-container {
-  padding-top: 3rem;
+  flex-shrink: 0;
+  margin-top: 3rem;
 }
 
 .about-img {
