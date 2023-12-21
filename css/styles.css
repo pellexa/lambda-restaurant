@@ -39,6 +39,7 @@ Colors:
   );
 
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -143,7 +144,7 @@ Colors:
   padding-left: 32rem;
   padding-right: 32rem;
   text-align: center;
-  text-shadow: 1px 1px 2px #010101;
+  text-shadow: 1px 1px 2px rgb(0 0 0 /80%);
 }
 
 .promo-buttons {
