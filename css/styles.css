@@ -18,32 +18,6 @@ Colors:
   color: #e8e8e8;
 }
 
-.divider-lg {
-  width: 23.2rem;
-  height: 4.3rem;
-}
-
-.divider-md {
-  width: 24.7rem;
-  height: 2.4rem;
-}
-
-.margin-bottom-sm {
-  margin-bottom: 1.4rem;
-}
-
-.margin-bottom-md {
-  margin-bottom: 2rem;
-}
-
-.margin-bottom-lg {
-  margin-bottom: 3rem;
-}
-
-.margin-bottom-xl {
-  margin-bottom: 5rem;
-}
-
 .container {
   position: relative;
   width: 160rem;
@@ -173,6 +147,11 @@ Colors:
   text-shadow: 1px 1px 2px rgb(0 0 0 /80%);
 }
 
+.promo-divider {
+  width: 23.2rem;
+  height: 4.3rem;
+}
+
 .promo-buttons {
   display: flex;
   gap: 3rem;
@@ -241,6 +220,7 @@ Colors:
   align-items: center;
   flex-direction: column;
   flex: 1;
+  padding-top: 0.6rem;
   padding-bottom: 2rem;
 }
 
@@ -248,22 +228,30 @@ Colors:
   font-family: "Yeseva One";
   font-size: 3.6rem;
   color: #cc9900;
+  margin-bottom: 1.4rem;
+}
+
+.about-divider {
+  width: 24.7rem;
+  height: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .about-text {
   font-family: "Lato";
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 2.4rem;
   color: #4c4c4c;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-.cook {
+.about-cook {
   width: 21.9rem;
   height: 22.1rem;
-  transform: translateX(3.6rem);
+  margin-left: 7rem;
 }
 
 .about-img-container {
