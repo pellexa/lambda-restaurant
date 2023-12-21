@@ -5,13 +5,21 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+
+Colors:
+ - Text:
+    #e8e8e8
+    #ffffff
+
 */
 
 :root {
   font: 400 10px / 1.2 "Yeseva One";
+  color: #e8e8e8;
 }
 
 .container {
+  position: relative;
   width: 160rem;
   margin: 0 auto;
 }
@@ -23,6 +31,17 @@
   padding-left: 18rem;
   padding-right: 20.4rem;
   align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.01)
+  );
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -101,4 +120,73 @@
 
 .social-link:active {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ***************** */
+/* Promo */
+/* ***************** */
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 75rem;
+  background-image: url("../img/promo.jpg");
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.promo-text {
+  font-family: "Yeseva One";
+  font-size: 9rem;
+  line-height: 1.3;
+  padding-left: 32rem;
+  padding-right: 32rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(0 0 0 /80%);
+}
+
+.promo-buttons {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: "Lato";
+  font-size: 1.8rem;
+  height: 5.6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn-black {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-black:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-black:active {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.btn-white {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-white:active {
+  background-color: rgba(255, 255, 255, 0.35);
 }
