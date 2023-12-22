@@ -18,6 +18,13 @@ Colors:
   color: #e8e8e8;
 }
 
+.text {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
 .container {
   position: relative;
   width: 160rem;
@@ -240,13 +247,9 @@ Colors:
 }
 
 .about-text {
-  font-family: "Lato";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
   color: #4c4c4c;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  text-align: center;
   margin-bottom: 5rem;
 }
 
@@ -305,10 +308,6 @@ Colors:
 }
 
 .ingredients-text {
-  font-family: "Lato";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  text-align: center;
   margin-bottom: 6.8rem;
 }
 
