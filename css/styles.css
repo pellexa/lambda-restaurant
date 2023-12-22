@@ -14,6 +14,8 @@ Colors:
 */
 
 :root {
+  --color-primary: #cc9900;
+
   font: 400 10px / 1.2 "Yeseva One";
   color: #e8e8e8;
 }
@@ -24,7 +26,7 @@ Colors:
 }
 
 .heading-primary {
-  color: #cc9900;
+  color: var(--color-primary);
 }
 
 .heading-secondary {
@@ -342,12 +344,7 @@ Colors:
 .menu-content {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 14.6rem;
-}
-
-.menu-conten-column {
-  display: flex;
-  flex-direction: column;
+  gap: 14.6rem;
 }
 
 .menu-group {
@@ -386,6 +383,7 @@ Colors:
   left: 0;
   right: 0;
   border: 1px solid #cc990080;
+  z-index: -1;
 }
 
 .menu-item.special::after {
@@ -411,7 +409,7 @@ Colors:
 .menu-price {
   font-family: "Yeseva One";
   font-size: 2.2rem;
-  color: #cc9900;
+  color: var(--color-primary);
   letter-spacing: -0.6px;
 }
 
@@ -422,8 +420,6 @@ hr {
 }
 
 .menu-item-description {
-  font-family: "Lato";
-  font-size: 1.6rem;
   color: #4c4c4c;
   text-align: left;
 }
