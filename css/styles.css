@@ -324,3 +324,106 @@ Colors:
   border: 0.5rem solid rgb(255 255 255 / 9%);
   border-radius: 50%;
 }
+
+/* ***************** */
+/* Menu */
+/* ***************** */
+.menu {
+  padding: 10.4rem 27.4rem 9.6rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(32 90 91 / 14%),
+      rgb(255 255 255)
+    ),
+    url("../img/bg-menu.png");
+  box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 / 6%);
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14.6rem;
+}
+
+.menu-conten-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 45.2rem;
+  margin-bottom: 4.2rem;
+}
+
+.menu-group figcaption {
+  margin-bottom: 1.2rem;
+  align-self: center;
+}
+
+.menu-divider {
+  width: 24.7rem;
+  height: 2.4rem;
+  margin-bottom: 1.6rem;
+  align-self: center;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.menu-item.special::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #cc990080;
+}
+
+.menu-item.special::after {
+  content: "Special";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-family: "Lato";
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.2rem 1.2rem;
+  background-color: #dab33ecc;
+  transform: translateY(-100%);
+}
+
+.menu-item-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-dish,
+.menu-price {
+  font-family: "Yeseva One";
+  font-size: 2.2rem;
+  color: #cc9900;
+  letter-spacing: -0.6px;
+}
+
+hr {
+  border-top: 1px solid #cc990080;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.menu-item-description {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  color: #4c4c4c;
+  text-align: left;
+}
