@@ -367,12 +367,18 @@ Colors:
   align-self: center;
 }
 
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 .menu-item {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin-bottom: 1.2rem;
 }
 
 .menu-item.special::before {
