@@ -389,7 +389,7 @@ Colors:
   left: 0;
   right: 0;
   border: 1px solid #cc990080;
-  z-index: -1;
+  pointer-events: none;
 }
 
 .menu-item.special::after {
