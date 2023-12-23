@@ -379,6 +379,7 @@ Colors:
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  z-index: 0;
 }
 
 .menu-item.special::before {
@@ -389,7 +390,7 @@ Colors:
   left: 0;
   right: 0;
   border: 1px solid #cc990080;
-  pointer-events: none;
+  z-index: -1;
 }
 
 .menu-item.special::after {
