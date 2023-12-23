@@ -331,7 +331,7 @@ Colors:
 /* Menu */
 /* ***************** */
 .menu {
-  padding: 10.4rem 27.4rem 9.6rem;
+  padding: 10.4rem 27.4rem 3.3rem;
   background-image: linear-gradient(
       to right bottom,
       rgb(32 90 91 / 14%),
@@ -342,9 +342,8 @@ Colors:
 }
 
 .menu-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14.6rem;
+  column-gap: 14.6rem;
+  columns: 2;
 }
 
 .menu-group {
