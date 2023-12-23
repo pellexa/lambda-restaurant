@@ -389,7 +389,7 @@ Colors:
   bottom: 0;
   left: 0;
   right: 0;
-  border: 1px solid #cc990080;
+  border: 1px solid rgb(204 153 0 / 50%);
   z-index: -1;
 }
 
@@ -421,7 +421,7 @@ Colors:
 }
 
 hr {
-  border-top: 1px solid #cc990080;
+  border-top: 1px solid rgb(204 153 0 / 50%);
   margin-top: 0.8rem;
   margin-bottom: 0.6rem;
 }
