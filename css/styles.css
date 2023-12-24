@@ -370,7 +370,13 @@ Colors:
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .menu-item {
@@ -384,9 +390,9 @@ Colors:
 .menu-item.special::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0.4rem;
   bottom: 0;
-  left: 0;
+  left: -0.3rem;
   right: 0;
   border: 1px solid rgb(204 153 0 / 50%);
   z-index: -1;
@@ -403,12 +409,7 @@ Colors:
   color: #fff;
   padding: 0.2rem 1.2rem;
   background-color: #dab33ecc;
-  transform: translateY(-100%);
-}
-
-.menu-item-row {
-  display: flex;
-  justify-content: space-between;
+  transform: translateY(-1.6rem);
 }
 
 .menu-dish,
@@ -419,13 +420,14 @@ Colors:
   letter-spacing: -0.6px;
 }
 
-hr {
-  border-top: 1px solid rgb(204 153 0 / 50%);
-  margin-top: 0.8rem;
-  margin-bottom: 0.6rem;
+.menu-price {
+  justify-self: end;
 }
 
 .menu-item-description {
+  grid-column: 1 / -1;
   color: #4c4c4c;
   text-align: left;
+  border-top: 1px solid rgb(204 153 0 / 50%);
+  padding-top: 0.8rem;
 }
