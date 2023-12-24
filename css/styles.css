@@ -471,14 +471,14 @@ Colors:
   content: open-quote;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -0.8rem;
   font-family: "Georgia";
   font-size: 7.6rem;
-  padding-right: 0.8rem;
   transform: translateX(-100%);
 }
 
 .review-signature {
+  font-family: "Lato";
   font-size: 1.8rem;
-  margin-top: 3.2rem;
+  margin-top: 3.4rem;
 }
