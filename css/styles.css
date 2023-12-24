@@ -14,6 +14,8 @@ Colors:
 */
 
 :root {
+  --color-primary: #cc9900;
+
   font: 400 10px / 1.2 "Yeseva One";
   color: #e8e8e8;
 }
@@ -24,7 +26,7 @@ Colors:
 }
 
 .heading-primary {
-  color: #cc9900;
+  color: var(--color-primary);
 }
 
 .heading-secondary {
@@ -323,4 +325,109 @@ Colors:
   height: 100%;
   border: 0.5rem solid rgb(255 255 255 / 9%);
   border-radius: 50%;
+}
+
+/* ***************** */
+/* Menu */
+/* ***************** */
+.menu {
+  padding: 10.2rem 27.4rem 3.3rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(32 90 91 / 14%),
+      rgb(255 255 255)
+    ),
+    url("../img/bg-menu.png");
+  box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 / 6%);
+}
+
+.menu-content {
+  column-gap: 14.6rem;
+  columns: 2;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 45.2rem;
+  margin-bottom: 4rem;
+}
+
+.menu-group h2 {
+  margin-bottom: 1.2rem;
+  align-self: center;
+}
+
+.menu-divider {
+  width: 24.7rem;
+  height: 2.4rem;
+  margin-bottom: 1.8rem;
+  align-self: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  z-index: 0;
+}
+
+.menu-item.special::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0;
+  left: -0.3rem;
+  right: 0;
+  border: 1px solid rgb(204 153 0 / 50%);
+  z-index: -1;
+}
+
+.menu-item.special::after {
+  content: "Special";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-family: "Lato";
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.2rem 1.2rem;
+  background-color: #dab33ecc;
+  transform: translateY(-1.6rem);
+}
+
+.menu-dish,
+.menu-price {
+  font-family: "Yeseva One";
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  letter-spacing: -0.6px;
+}
+
+.menu-price {
+  justify-self: end;
+}
+
+.menu-item-description {
+  grid-column: 1 / -1;
+  color: #4c4c4c;
+  text-align: left;
+  border-top: 1px solid rgb(204 153 0 / 50%);
+  padding-top: 0.8rem;
 }
