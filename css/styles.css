@@ -232,15 +232,15 @@ Colors:
 }
 
 .btn-gold {
-  background-color: rgb(201, 161, 48);
+  background-color: var(--color-primary);
 }
 
 .btn-gold:hover {
-  background-color: rgba(201, 161, 48, 0.9);
+  background-color: rgb(204 153 0 / 90%);
 }
 
 .btn-gold:active {
-  background-color: rgba(201, 161, 48, 0.95);
+  background-color: rgb(204 153 0 / 95%);
 }
 
 /* ***************** */
@@ -525,10 +525,9 @@ Colors:
 .reservations-content {
   display: flex;
   gap: 10rem;
-  width: 110.2rem;
 }
 
-.reservations-left {
+.reservations-images {
   display: flex;
   gap: 3.2rem;
   flex-shrink: 0;
@@ -536,10 +535,10 @@ Colors:
 
 .reservations-img {
   width: 27rem;
-  height: 50.7rem;
+  height: 100%;
 }
 
-.reservations-right {
+.reservations-content-form {
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -564,11 +563,12 @@ Colors:
 }
 
 .reservations-form {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr min-content;
+  justify-items: center;
   column-gap: 3rem;
-  row-gap: 2.6rem;
-  justify-content: center;
+  row-gap: 2.4rem;
 }
 
 .reservations-form .field:focus {
@@ -581,7 +581,7 @@ Colors:
   flex-direction: column;
 }
 
-.label {
+.field-label {
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-weight: 700;
@@ -593,7 +593,7 @@ Colors:
   position: relative;
 }
 
-.field,
+.field-input,
 .field-select option {
   font-family: "Open Sans";
   font-size: 1.8rem;
@@ -662,4 +662,5 @@ Colors:
 
 .reservations-form .btn-secondary {
   margin-top: 0.6rem;
+  grid-column: 1 / -1;
 }

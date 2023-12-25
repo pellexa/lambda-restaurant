@@ -418,7 +418,7 @@
 
       <section class="reservations">
         <div class="reservations-content">
-          <div class="reservations-left">
+          <div class="reservations-images">
             <img
               src="../img/reservations2.jpg"
               alt="Dish with garnish on the table"
@@ -431,7 +431,7 @@
             />
           </div>
 
-          <div class="reservations-right">
+          <div class="reservations-content-form">
             <figure class="reservations-description">
               <figcaption>
                 <h2 class="heading heading-primary">Just the right food</h2>
@@ -457,9 +457,9 @@
 
             <form class="reservations-form">
               <div class="field-box">
-                <label class="label" for="name">Name</label>
+                <label class="field-label" for="name">Name</label>
                 <input
-                  class="field"
+                  class="field-input"
                   id="name"
                   type="text"
                   placeholder="your name *"
@@ -468,9 +468,9 @@
               </div>
 
               <div class="field-box">
-                <label class="label" for="email">Name</label>
+                <label class="field-label" for="email">Name</label>
                 <input
-                  class="field"
+                  class="field-input"
                   id="eamil"
                   type="email"
                   placeholder="your email *"
@@ -479,10 +479,10 @@
               </div>
 
               <div class="field-box">
-                <label class="label" for="date">Date</label>
+                <label class="field-label" for="date">Date</label>
                 <span class="field-wrapper">
                   <input
-                    class="field field-date"
+                    class="field-input field-date"
                     id="date"
                     type="date"
                     placeholder="date *"
@@ -493,9 +493,15 @@
               </div>
 
               <div class="field-box">
-                <label class="label" for="party_number">Party number</label>
+                <label class="field-label" for="party_number">
+                  Party number
+                </label>
                 <span class="field-wrapper">
-                  <select class="field field-select" id="party_number" required>
+                  <select
+                    class="field-input field-select"
+                    id="party_number"
+                    required
+                  >
                     <option value="">party number *</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
