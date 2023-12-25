@@ -182,14 +182,27 @@ Colors:
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn-primary {
   font-family: "Lato";
   font-size: 1.8rem;
   height: 5.6rem;
   padding-left: 5rem;
   padding-right: 5rem;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in;
+}
+
+.btn-secondary {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: #fff;
+  width: 20rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 .btn-black {
@@ -216,6 +229,18 @@ Colors:
 
 .btn-white:active {
   background-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-gold {
+  background-color: rgb(201, 161, 48);
+}
+
+.btn-gold:hover {
+  background-color: rgba(201, 161, 48, 0.9);
+}
+
+.btn-gold:active {
+  background-color: rgba(201, 161, 48, 0.95);
 }
 
 /* ***************** */
@@ -481,4 +506,160 @@ Colors:
   font-family: "Lato";
   font-size: 1.8rem;
   margin-top: 3.4rem;
+}
+
+/* ***************** */
+/* Reservation */
+/* ***************** */
+.reservations {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(12 52 53 / 10%),
+      rgb(0 0 0 / 6%)
+    ),
+    url("../img/bg-about.png");
+  padding: 10rem 28.4rem 10rem 21.4rem;
+  box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 / 6%);
+}
+
+.reservations-content {
+  display: flex;
+  gap: 10rem;
+  width: 110.2rem;
+}
+
+.reservations-left {
+  display: flex;
+  gap: 3.2rem;
+  flex-shrink: 0;
+}
+
+.reservations-img {
+  width: 27rem;
+  height: 50.7rem;
+}
+
+.reservations-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.reservations-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservations-divider {
+  margin-top: 0.8rem;
+  margin-bottom: 2.7rem;
+}
+
+.reservations-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #4c4c4c;
+}
+
+.reservations-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 2.6rem;
+  justify-content: center;
+}
+
+.reservations-form .field:focus {
+  outline: none;
+  border: 1px solid #cc9900;
+}
+
+.field-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+.field-wrapper {
+  position: relative;
+}
+
+.field,
+.field-select option {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  color: #4c4c4c;
+  border: 1px solid #8c8c8c;
+  padding: 0.6rem 0.8rem 0.6rem 1.2rem;
+  background-color: rgb(255 255 255 / 50%);
+  width: 20rem;
+  letter-spacing: -0.8px;
+}
+
+.field-date:invalid::-webkit-datetime-edit,
+.field-select:invalid,
+.field-select option[value=""],
+::placeholder {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #8c8c8c;
+}
+
+/* initial */
+.field-date::before {
+  content: attr(placeholder);
+  font-family: "Open Sans";
+  font-style: italic;
+  font-size: 1.8rem;
+  color: #8c8c8c;
+}
+
+.field-date::-webkit-datetime-edit {
+  opacity: 0;
+}
+
+/* focus/valid */
+.field-date:focus::before,
+.field-date:valid::before {
+  display: none;
+}
+
+.field-date:focus::-webkit-datetime-edit,
+.field-date:valid::-webkit-datetime-edit {
+  opacity: 1;
+}
+
+/* change icon */
+.field-date::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 1;
+}
+
+.field-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.4rem;
+  color: #8c8c8c;
+  transform: translate(-100%, 1rem);
+  pointer-events: none;
+}
+
+.field-select ~ .field-icon {
+  right: 0.6rem;
+}
+
+.reservations-form .btn-secondary {
+  margin-top: 0.6rem;
 }

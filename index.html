@@ -18,9 +18,20 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script defer src="./js/script.js"></script>
     <title>LAMBDA</title>
   </head>
   <body>
@@ -142,8 +153,8 @@
         />
 
         <div class="promo-buttons">
-          <button class="btn btn-black">Book a table</button>
-          <button class="btn btn-white">See the menu</button>
+          <button class="btn btn-primary btn-black">Book a table</button>
+          <button class="btn btn-primary btn-white">See the menu</button>
         </div>
       </section>
 
@@ -403,6 +414,103 @@
           </blockquote>
           <p class="review-signature">- food inc, New York</p>
         </figure>
+      </section>
+
+      <section class="reservations">
+        <div class="reservations-content">
+          <div class="reservations-left">
+            <img
+              src="../img/reservations2.jpg"
+              alt="Dish with garnish on the table"
+              class="reservations-img"
+            />
+            <img
+              src="../img/reservations1.jpg"
+              alt="Dessert on the table"
+              class="reservations-img"
+            />
+          </div>
+
+          <div class="reservations-right">
+            <figure class="reservations-description">
+              <figcaption>
+                <h2 class="heading heading-primary">Just the right food</h2>
+              </figcaption>
+              <img
+                src="../img/divider-gold.png"
+                alt="Divider between heading and content"
+                class="reservations-divider"
+              />
+              <blockquote class="text reservations-text">
+                <p>
+                  If you’ve been to one of our restaurants, you’ve seen – and
+                  tasted – what keeps our customers coming back for more.
+                  Perfect materials and freshly baked food.
+                </p>
+                <p>
+                  Delicious Lambda cakes, muffins, and gourmet coffees make us
+                  hard to resist! Stop in today and check us out! Perfect
+                  materials and freshly baked food.
+                </p>
+              </blockquote>
+            </figure>
+
+            <form class="reservations-form">
+              <div class="field-box">
+                <label class="label" for="name">Name</label>
+                <input
+                  class="field"
+                  id="name"
+                  type="text"
+                  placeholder="your name *"
+                  required
+                />
+              </div>
+
+              <div class="field-box">
+                <label class="label" for="email">Name</label>
+                <input
+                  class="field"
+                  id="eamil"
+                  type="email"
+                  placeholder="your email *"
+                  required
+                />
+              </div>
+
+              <div class="field-box">
+                <label class="label" for="date">Date</label>
+                <span class="field-wrapper">
+                  <input
+                    class="field field-date"
+                    id="date"
+                    type="date"
+                    placeholder="date *"
+                    required
+                  />
+                  <i class="fa fa-calendar field-icon" aria-hidden="true"></i>
+                </span>
+              </div>
+
+              <div class="field-box">
+                <label class="label" for="party_number">Party number</label>
+                <span class="field-wrapper">
+                  <select class="field field-select" id="party_number" required>
+                    <option value="">party number *</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <i class="fa fa-angle-down field-icon" aria-hidden="true"></i>
+                </span>
+              </div>
+
+              <button class="btn btn-secondary btn-gold">Book now!</button>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
   </body>
