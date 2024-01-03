@@ -21,16 +21,22 @@ Colors:
 }
 
 .heading {
-  font-size: 3.6rem;
   font-family: "Yeseva One";
   text-align: center;
 }
 
 .heading-primary {
+  font-size: 3.6rem;
   color: rgb(var(--color-primary));
 }
 
 .heading-secondary {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.heading-tertiary {
+  font-size: 2.1rem;
   color: #fff;
 }
 
@@ -707,10 +713,6 @@ Colors:
   font-weight: 700;
 }
 
-.footer .heading {
-  font-size: 2.1rem;
-}
-
 .footer-hours {
   display: flex;
   flex-direction: column;
@@ -734,24 +736,29 @@ address .footer-text {
   font-weight: 700;
 }
 
+.footer-icon {
+  font-size: 1.6rem;
+}
+
 .footer-social {
   display: flex;
   margin-top: auto;
   margin-left: 1.4rem;
 }
 
-.footer-payments-icon,
-.footer-social-icon {
-  font-size: 1.6rem;
+.footer-payments-link,
+.footer-social-link {
+  display: inline-block;
   padding: 0.6rem;
+  transition: background-color 0.3s ease-in;
 }
 
-.footer-payments-icon:hover,
-.footer-social-icon:hover {
+.footer-payments-link:hover,
+.footer-social-link:hover {
   background-color: rgb(255 255 255 / 20%);
 }
 
-.footer-payments-icon:active,
-.footer-social-icon:active {
+.footer-payments-link:active,
+.footer-social-link:active {
   background-color: rgb(255 255 255 / 25%);
 }
