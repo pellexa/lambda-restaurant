@@ -14,7 +14,7 @@ Colors:
 */
 
 :root {
-  --color-primary: #cc9900;
+  --color-primary: 204 153 0;
 
   font: 400 10px / 1.2 "Yeseva One";
   color: #e8e8e8;
@@ -27,7 +27,7 @@ Colors:
 }
 
 .heading-primary {
-  color: var(--color-primary);
+  color: rgb(var(--color-primary));
 }
 
 .heading-secondary {
@@ -203,7 +203,7 @@ Colors:
   color: #fff;
   padding: 0.8rem 6rem;
   text-align: center;
-  min-height: 3.6rem;
+  height: 3.6rem;
 }
 
 .btn-black {
@@ -233,15 +233,15 @@ Colors:
 }
 
 .btn-gold {
-  background-color: var(--color-primary);
+  background-color: rgb(var(--color-primary));
 }
 
 .btn-gold:hover {
-  background-color: rgb(204 153 0 / 90%);
+  background-color: rgb(var(--color-primary) / 90%);
 }
 
 .btn-gold:active {
-  background-color: rgb(204 153 0 / 95%);
+  background-color: rgb(var(--color-primary) / 95%);
 }
 
 /* ***************** */
@@ -420,7 +420,7 @@ Colors:
   bottom: 0;
   left: -0.3rem;
   right: 0;
-  border: 1px solid rgb(204 153 0 / 50%);
+  border: 1px solid rgb(var(--color-primary) / 50%);
   z-index: -1;
 }
 
@@ -442,7 +442,7 @@ Colors:
 .menu-price {
   font-family: "Yeseva One";
   font-size: 2.2rem;
-  color: var(--color-primary);
+  color: rgb(var(--color-primary));
   letter-spacing: -0.6px;
 }
 
@@ -454,7 +454,7 @@ Colors:
   grid-column: 1 / -1;
   color: #4c4c4c;
   text-align: left;
-  border-top: 1px solid rgb(204 153 0 / 50%);
+  border-top: 1px solid rgb(var(--color-primary) / 50%);
   padding-top: 0.8rem;
 }
 
@@ -574,22 +574,18 @@ Colors:
   row-gap: 2.6rem;
 }
 
-.reservations-form .field:focus {
-  outline: none;
-  border: 1px solid #cc9900;
-}
-
 .field-box {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
 .field-label {
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--color-primary);
-  margin-bottom: 0.6rem;
+  color: rgb(var(--color-primary));
+  line-height: 1.8rem;
 }
 
 .field-wrapper {
@@ -601,7 +597,7 @@ Colors:
 }
 
 .field-input:focus {
-  border: 1px solid var(--color-primary);
+  border: 1px solid rgb(var(--color-primary));
 }
 
 .field-input,
@@ -614,7 +610,6 @@ Colors:
   padding: 0.6rem 0.8rem 0.6rem 1.4rem;
   background-color: rgb(255 255 255 / 50%);
   width: 20rem;
-  /* letter-spacing: -0.8px; */
 }
 
 .field-date:invalid::-webkit-datetime-edit,
@@ -672,6 +667,11 @@ Colors:
 }
 
 .reservations-form .btn-secondary {
+  display: inline-block;
   margin-top: 0.6rem;
   grid-column: 1 / -1;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
