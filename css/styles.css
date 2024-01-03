@@ -518,7 +518,7 @@ Colors:
       rgb(0 0 0 / 6%)
     ),
     url("../img/bg-about.png");
-  padding: 10rem 28.4rem 10rem 21.4rem;
+  padding: 10rem 28.4rem 10.4rem 21.4rem;
   box-shadow: inset 0 0 2.4rem 1.2rem rgb(0 0 0 / 6%);
 }
 
@@ -673,4 +673,85 @@ Colors:
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/* ***************** */
+/* Footer */
+/* ***************** */
+.footer {
+  display: flex;
+  background-color: #191919;
+  padding: 5.8rem 29.8rem 7rem 22.8rem;
+  gap: 12.8rem;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 34.6rem;
+}
+
+.footer-divider {
+  margin-top: 1.4rem;
+  margin-bottom: 1.8rem;
+  width: 19.8rem;
+  height: 1.8rem;
+}
+
+.footer-text {
+  font-family: "Open Sans";
+}
+
+.footer-text em {
+  font-weight: 700;
+}
+
+.footer .heading {
+  font-size: 2.1rem;
+}
+
+.footer-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+}
+
+.footer-payments {
+  display: flex;
+  margin-top: auto;
+  margin-left: 0.6rem;
+}
+
+.footer-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+address .footer-text {
+  font-weight: 700;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: auto;
+  margin-left: 1.4rem;
+}
+
+.footer-payments-icon,
+.footer-social-icon {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+}
+
+.footer-payments-icon:hover,
+.footer-social-icon:hover {
+  background-color: rgb(255 255 255 / 20%);
+}
+
+.footer-payments-icon:active,
+.footer-social-icon:active {
+  background-color: rgb(255 255 255 / 25%);
 }
